@@ -29,7 +29,6 @@ function NotFoundComponent() {
 export const Route = createRootRoute({
   head: () => ({
     meta: [
-      // ───── Core ─────
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, viewport-fit=cover" },
       { httpEquiv: "X-UA-Compatible", content: "IE=edge" },
@@ -39,12 +38,12 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Chiku Tube is a clean, distraction-free video discovery app with AI-curated shelves and a beautiful custom player — built to help you watch less and enjoy more.",
+          "Chiku Tube is your escape from the algorithm — a beautifully minimal video discovery platform powered by AI-curated shelves. No endless scrolling, no rage bait, no burnout. Just handpicked content you'll actually love, served through a gorgeous custom player designed for focus and joy.",
       },
       {
         name: "keywords",
         content:
-          "chiku tube, youtube alternative, ai video recommendations, distraction free video player, reduce youtube addiction, minimal video discovery, custom youtube player",
+          "chiku tube, distraction-free youtube, ai video recommendations, mindful video watching, minimal video player, curated video discovery, reduce screen time, youtube alternative, calm video app, intentional watching",
       },
       { name: "author", content: "Anya" },
       { name: "creator", content: "Anya" },
@@ -53,14 +52,12 @@ export const Route = createRootRoute({
       { name: "rating", content: "general" },
       { name: "referrer", content: "strict-origin-when-cross-origin" },
 
-      // ───── Search engines ─────
       { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
       { name: "googlebot", content: "index, follow, max-image-preview:large, max-snippet:-1" },
       { name: "bingbot", content: "index, follow" },
       { name: "google", content: "notranslate" },
       { name: "google-site-verification", content: "" },
 
-      // ───── PWA / App ─────
       { name: "application-name", content: "Chiku Tube" },
       { name: "apple-mobile-web-app-title", content: "Chiku Tube" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
@@ -70,19 +67,17 @@ export const Route = createRootRoute({
       { name: "HandheldFriendly", content: "true" },
       { name: "MobileOptimized", content: "320" },
 
-      // ───── Microsoft / Windows tiles ─────
       { name: "msapplication-TileColor", content: "#7C3AED" },
       { name: "msapplication-TileImage", content: "/chiku.png" },
       { name: "msapplication-config", content: "/browserconfig.xml" },
       { name: "msapplication-tap-highlight", content: "no" },
 
-      // ───── Open Graph (Facebook, LinkedIn, WhatsApp, Discord, Telegram, Slack, iMessage) ─────
       { property: "og:site_name", content: "Chiku Tube" },
-      { property: "og:title", content: "Chiku Tube — Watch what matters" },
+      { property: "og:title", content: "Chiku Tube — Watch what matters, not what's trending" },
       {
         property: "og:description",
         content:
-          "Smart, minimal video discovery with AI-curated shelves. Built to reduce YouTube addiction.",
+          "Break free from the algorithm. Chiku Tube delivers AI-curated video shelves in a clean, distraction-free player — so every watch feels intentional, not accidental.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://chiku-tube.vercel.app" },
@@ -91,29 +86,25 @@ export const Route = createRootRoute({
       { property: "og:image:type", content: "image/jpeg" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Chiku Tube — distraction-free video discovery" },
+      { property: "og:image:alt", content: "Chiku Tube — distraction-free video discovery, beautifully designed" },
       { property: "og:locale", content: "en_US" },
 
-      // ───── Twitter / X ─────
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@itzAnya" },
       { name: "twitter:creator", content: "@itzAnya" },
-      { name: "twitter:title", content: "Chiku Tube — Watch what matters" },
+      { name: "twitter:title", content: "Chiku Tube — Watch what matters, not what's trending" },
       {
         name: "twitter:description",
-        content: "Smart, minimal video discovery with AI-curated shelves.",
+        content:
+          "AI-curated video shelves. A minimal, gorgeous player. Zero rage bait. Chiku Tube is the mindful way to watch.",
       },
       { name: "twitter:image", content: "https://chiku-tube.vercel.app/og-image.jpg" },
-      { name: "twitter:image:alt", content: "Chiku Tube — distraction-free video discovery" },
+      { name: "twitter:image:alt", content: "Chiku Tube — distraction-free video discovery, beautifully designed" },
 
-      // ───── Pinterest ─────
       { name: "pinterest", content: "nopin" },
       { name: "pinterest-rich-pin", content: "true" },
 
-      // ───── Facebook (optional app id) ─────
       { property: "fb:app_id", content: "" },
-
-      // ───── Discord / Slack (use OG above; theme-color drives embed accent) ─────
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -140,7 +131,7 @@ export const Route = createRootRoute({
           "@type": "WebApplication",
           name: "Chiku Tube",
           description:
-            "Distraction-free video discovery app with AI-curated shelves, built to reduce YouTube addiction.",
+            "A beautifully minimal, distraction-free video discovery platform powered by AI-curated shelves. Designed to help you watch less, enjoy more, and reclaim your attention from the algorithm.",
           applicationCategory: "MultimediaApplication",
           operatingSystem: "Any",
           offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
@@ -187,3 +178,6 @@ function RootComponent() {
     </div>
   );
 }
+
+
+
