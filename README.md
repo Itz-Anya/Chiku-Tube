@@ -162,32 +162,27 @@ settings.
 ---
 
 
-
 ## 👩‍💻 Creators
 
-<p align="center">
-<table>
-<tr>
+<table align="center" width="100%">
+    <tr>
+      <td align="center" width="50%">
+        <img src="https://itz-murali-images.vercel.app/anya" width="180"><br><br>
+        <b>𝜜ɴყꫝㅤ𓆩💗𓆪</b><br><br>
+        <a href="https://github.com/itz-Anya">
+          <img src="https://img.shields.io/badge/GitHub-Anya-black?style=for-the-badge&logo=github">
+        </a>
+      </td>
+      <td align="center" width="50%">
+        <img src="https://itz-murali-images.vercel.app/api" width="180"><br><br>
+        <b>𝐌 𝐔 𝐑 𝚨 𝐋 𝐈 𓂃ִֶָ⋆.˚</b><br><br>
+        <a href="https://github.com/Itz-Murali">
+          <img src="https://img.shields.io/badge/GitHub-Itz--Murali-black?style=for-the-badge&logo=github">
+        </a>
+      </td>
+    </tr>
+  </table>
 
-<td align="center" width="50%">
-<img src="https://itz-murali-images.vercel.app/anya" width="180"><br><br>
-<b>𝐀 𝐍 𝐘 𝐀 𓂃ִֶָ⋆.˚</b><br><br>
-<a href="https://github.com/itz-Anya">
-<img src="https://img.shields.io/badge/GitHub-Anya-black?style=for-the-badge&logo=github">
-</a>
-</td>
-
-<td align="center" width="50%">
-<img src="https://itz-murali-images.vercel.app/api" width="180"><br><br>
-<b>𝐌 𝐔 𝐑 𝚨 𝐋 𝐈 𓂃ִֶָ⋆.˚</b><br><br>
-<a href="https://github.com/Itz-Murali">
-<img src="https://img.shields.io/badge/GitHub-Itz--Murali-black?style=for-the-badge&logo=github">
-</a>
-</td>
-
-</tr>
-</table>
-</p>
 
 ---
 
