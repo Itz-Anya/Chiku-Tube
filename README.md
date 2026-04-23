@@ -1,7 +1,6 @@
-# Chiku Tube 🌿
 
 <p align="center">
-  <img src="public/chiku.png" alt="Chiku Logo" />
+  <img src="public/chiku.png" alt="Chiku Logo" width="350"/>
 </p>
 
 > A calmer way to watch. **Made to reduce YouTube addiction** — not feed it.
