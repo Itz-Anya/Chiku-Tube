@@ -154,8 +154,6 @@ CMD ["node", ".output/server/index.mjs"]
 ## Privacy & data
 
 - **Watch history, likes, position memory** → `localStorage` only.
-- **AI prompts** → sent to Pollinations as anonymized titles only.
-  No user IDs. No identifying metadata.
 - **No analytics, no trackers, no third-party scripts.**
 
 You can wipe everything in one click via your browser's site-data
