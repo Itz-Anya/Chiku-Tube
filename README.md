@@ -156,6 +156,7 @@ CMD ["node", ".output/server/index.mjs"]
 ## Privacy & data
 
 - **Watch history, likes, position memory** → `localStorage` only.
+- **We Use Your ip address for showing content according to your language**
 - **No analytics, no trackers, no third-party scripts.**
 
 You can wipe everything in one click via your browser's site-data
