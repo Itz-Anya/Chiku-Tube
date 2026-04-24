@@ -1,0 +1,238 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --breakpoint-xs: 26rem; /* ~416px — tiny phones get a 2-col grid */
+}
+
+/*
+ * Chiku Tube design system — warm cream + deep teal accent.
+ * Distinctive, premium, never neon. Coral highlight for "liked" / actions.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --shadow-soft: var(--shadow-soft);
+  --shadow-elevated: var(--shadow-elevated);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+}
+
+:root {
+  --radius: 1rem;
+  /* Soft lavender-tinted off-white */
+  --background: oklch(0.985 0.006 295);
+  --foreground: oklch(0.2 0.03 285);
+  --surface: oklch(1 0 0);
+  --surface-elevated: oklch(0.995 0.005 295);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.2 0.03 285);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.2 0.03 285);
+  /* Vibrant indigo-violet primary */
+  --primary: oklch(0.55 0.2 285);
+  --primary-foreground: oklch(0.985 0.006 295);
+  --secondary: oklch(0.96 0.012 295);
+  --secondary-foreground: oklch(0.28 0.04 285);
+  --muted: oklch(0.95 0.012 295);
+  --muted-foreground: oklch(0.5 0.025 285);
+  --accent: oklch(0.94 0.025 295);
+  --accent-foreground: oklch(0.28 0.04 285);
+  /* Warm rose for likes / destructive */
+  --destructive: oklch(0.62 0.22 15);
+  --destructive-foreground: oklch(0.985 0.006 295);
+  --border: oklch(0.91 0.01 295);
+  --input: oklch(0.93 0.012 295);
+  --ring: oklch(0.6 0.18 285);
+  --shadow-soft: 0 1px 2px oklch(0.2 0.03 285 / 5%), 0 4px 14px oklch(0.2 0.03 285 / 7%);
+  --shadow-elevated: 0 4px 14px oklch(0.2 0.03 285 / 10%),
+    0 18px 42px oklch(0.2 0.03 285 / 14%);
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+.dark {
+  /* Deep indigo-charcoal */
+  --background: oklch(0.17 0.025 285);
+  --foreground: oklch(0.97 0.008 295);
+  --surface: oklch(0.21 0.028 285);
+  --surface-elevated: oklch(0.24 0.03 285);
+  --card: oklch(0.21 0.028 285);
+  --card-foreground: oklch(0.97 0.008 295);
+  --popover: oklch(0.21 0.028 285);
+  --popover-foreground: oklch(0.97 0.008 295);
+  /* Glowing lavender primary */
+  --primary: oklch(0.78 0.16 290);
+  --primary-foreground: oklch(0.17 0.025 285);
+  --secondary: oklch(0.27 0.03 285);
+  --secondary-foreground: oklch(0.97 0.008 295);
+  --muted: oklch(0.27 0.03 285);
+  --muted-foreground: oklch(0.72 0.02 295);
+  --accent: oklch(0.32 0.035 285);
+  --accent-foreground: oklch(0.97 0.008 295);
+  --destructive: oklch(0.72 0.2 15);
+  --destructive-foreground: oklch(0.17 0.025 285);
+  --border: oklch(1 0 0 / 9%);
+  --input: oklch(1 0 0 / 13%);
+  --ring: oklch(0.7 0.14 290);
+  --shadow-soft: 0 1px 2px oklch(0 0 0 / 35%), 0 4px 14px oklch(0 0 0 / 40%);
+  --shadow-elevated: 0 4px 14px oklch(0 0 0 / 45%), 0 18px 42px oklch(0 0 0 / 55%);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Thumbnail blur-up */
+.thumb-blur {
+  background: linear-gradient(
+    110deg,
+    oklch(0.92 0.015 75) 8%,
+    oklch(0.96 0.012 75) 18%,
+    oklch(0.92 0.015 75) 33%
+  );
+  background-size: 200% 100%;
+  animation: thumb-shimmer 1.4s linear infinite;
+}
+.dark .thumb-blur {
+  background: linear-gradient(
+    110deg,
+    oklch(0.25 0.022 215) 8%,
+    oklch(0.29 0.024 215) 18%,
+    oklch(0.25 0.022 215) 33%
+  );
+  background-size: 200% 100%;
+  animation: thumb-shimmer 1.4s linear infinite;
+}
+
+@keyframes thumb-shimmer {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+/* Hide native video controls when custom player is active */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+/* Slider track for video player volume */
+.player-range {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 9999px;
+  /* Visible filled track using a CSS variable updated from JS (--val 0..100). */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.95) calc(var(--val, 100) * 1%),
+    rgba(255, 255, 255, 0.3) calc(var(--val, 100) * 1%),
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  cursor: pointer;
+  outline: none;
+}
+.player-range::-webkit-slider-runnable-track {
+  height: 4px;
+  background: transparent;
+  border-radius: 9999px;
+}
+.player-range::-moz-range-track {
+  height: 4px;
+  background: transparent;
+  border-radius: 9999px;
+}
+.player-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  margin-top: -4px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Prevent horizontal overflow on tiny screens. */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* Reduce paint cost on long shelves below the fold. */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 600px;
+}
+
+/* Smoother fluid type for hero headings on tiny screens. */
+@media (max-width: 360px) {
+  h1 {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+}
+
