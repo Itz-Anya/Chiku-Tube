@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="public/chiku.png" alt="Chiku Logo" width="350"/>
 </p>
