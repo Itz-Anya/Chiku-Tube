@@ -170,7 +170,7 @@ settings.
 <table width="100%">
     <tr>
       <td align="center" width="50%">
-        <img src="https://itz-murali-images.vercel.app/anya" width="260"><br><br>
+        <img src="https://random-images-anya.vercel.app/anya" width="260"><br><br>
         <b>𝜜ɴყꫝㅤ𓆩💗𓆪</b><br><br>
         <a href="https://github.com/itz-Anya">
           <img src="https://img.shields.io/badge/GitHub-Anya-black?style=for-the-badge&logo=github">
