@@ -102,7 +102,7 @@ const CREATORS = [
     Icon: Palette,
     accent: "linear-gradient(135deg, oklch(0.75 0.18 320), oklch(0.7 0.2 350))",
     chipBg: "bg-fuchsia-500/15 text-fuchsia-600 dark:text-fuchsia-300",
-    img: "https://itz-murali-images.vercel.app/anya",
+    img: "https://random-images-brown.vercel.app/anya",
     github: "https://github.com/itz-Anya",
     githubLabel: "GitHub — itz-Anya",
     telegram: "https://t.me/SylveonLab",
